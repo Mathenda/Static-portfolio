@@ -132,7 +132,7 @@ html, body{
         width: 100%;
         min-height: 100vh;
         display: flex;
-        align-items: stretch;
+        align-items: flex-start;
         justify-content: center;
         /* overflow-y: hidden; */
         overflow-x: hidden;
@@ -163,7 +163,7 @@ html, body{
     .card-container {
         width: 90%;
         max-width: 900px;
-        height: auto;
+        height: 10%;
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -173,7 +173,7 @@ html, body{
         margin: auto;
         scroll-snap-type: y mandatory;
         margin-top: 100px;
-        margin-left: 100px;
+        /* margin-left: 100px; */
         
     }
     
@@ -187,7 +187,6 @@ html, body{
 
     .card {
         width: 70%;
-        height: auto;
         /* flex: 1; */
         border-radius: 15px;
         cursor: pointer;
@@ -199,7 +198,6 @@ html, body{
     }
     .card:hover {
         width: 100%;
-        height:100%;
     }
     
     
@@ -219,7 +217,7 @@ html, body{
         top: 0;
         z-index: -1;
         width: 150%;
-        /* height: 200vh; */
+        height: 150vh;
         object-fit: cover;
         pointer-events: none;
         filter: brightness(0.25);
@@ -237,7 +235,7 @@ html, body{
         height: 50%;
         margin-top: -250px;
         position: relative;
-        /* background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent); */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
     }
     
     .card .layer .info {
