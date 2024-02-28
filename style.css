@@ -27,8 +27,7 @@ body::before {
     filter: brightness(0.25);
     z-index: -1;
 }
-
-main {
+.card-container {
     width: 600px;
     height: 500px;
     display: flex;
@@ -42,7 +41,7 @@ main {
     overflow: hidden;
 }
 .card:hover {
-    width: 80%;
+    width: 130%;
 }
 
 .card .image {
