@@ -30,15 +30,17 @@ body::before {
     /* min-height: 100%; Replace height with min-height */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     filter: brightness(0.25);
     z-index: -1;
 }
 .card-container {
-    width: 600px;
+    width: 900px;
     height: 500px;
     display: flex;
     gap: 15px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     padding-left: 100px;
 
@@ -51,7 +53,7 @@ body::before {
 }
 
 .card {
-    width: 40%;
+    width: 20%;
     border-radius: 15px;
     cursor: pointer;
     overflow: hidden;
