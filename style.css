@@ -177,12 +177,14 @@ html, body{
         
     }
     
-    
+    .fade {
+        opacity: 0.4;
+    }
     .card-container:hover > :not(:hover){
-        opacity: 0.01;
+        opacity: 0.4;
     
     }
-    
+
     .card {
         width: 70%;
         /* flex: 1; */

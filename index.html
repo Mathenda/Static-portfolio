@@ -110,11 +110,28 @@
     </main>
 	<script src="index.js"></script>
     <script>
-            window.addEventListener('resize', setBodyBeforeHeight);
-        window.addEventListener('load', setBodyBeforeHeight);
+        // Get all the cards
+        var cards = document.querySelectorAll('.card');
 
-        function setBodyBeforeHeight() {
-            document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+        // Loop through all the cards
+        for (var i = 0; i < cards.length; i++) {
+            // Add mouseover event listener to each card
+            cards[i].addEventListener('mouseover', function() {
+                // On mouseover, set opacity of all other cards to 0.4
+                for (var j = 0; j < cards.length; j++) {
+                    if (cards[j] != this) {
+                        cards[j].style.opacity = '0.4';
+                    }
+                }
+            });
+
+            // Add mouseout event listener to each card
+            cards[i].addEventListener('mouseout', function() {
+                // On mouseout, set opacity of all cards back to 1
+                for (var j = 0; j < cards.length; j++) {
+                    cards[j].style.opacity = '1';
+                }
+            });
         }
     </script>
   </body>
