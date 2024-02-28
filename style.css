@@ -57,7 +57,7 @@ body::before {
     overflow: hidden;
 }
 .card:hover {
-    width: 130%;
+    width: 160%;
 }
 
 .card .image {
