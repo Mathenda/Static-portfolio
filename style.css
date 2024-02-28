@@ -20,29 +20,36 @@ body {
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
+
 body::before {
     content: "";
     background-image: url(Assets/kajetan-powolny-pqlsP0C-fws-unsplash.jpg);
     position: fixed;
-    width: 120%;
-    height: calc(var(--vh, 1vh) * 120);  
+    top: 0;
+    left: 0;
+    /* width: 100vw; */
+    height: 100vh;
+    width: 100%;
+    /* height: calc(var(--vh, 1vh) * 100);   */
     /* min-height: 100%; Replace height with min-height */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment:fixed;
     filter: brightness(0.25);
+    /* overflow-y: hidden !important; */
     z-index: -1;
 }
 .card-container {
     width: 900px;
     height: 500px;
     display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    padding-left: 100px;
+    gap: 20px;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* scroll-snap-type: x mandatory; */
+    /* padding-left: 100px; */
 
 }
 
